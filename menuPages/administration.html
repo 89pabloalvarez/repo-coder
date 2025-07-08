@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administración - Tablero De Administración</title>
+    <link rel="stylesheet" href="/styles/commonStyle.css" />
+    <link rel="stylesheet" href="/styles/menuStyle.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/menuPages/home.html"><h1>Tablero De Administración</h1></a>
+      <button class="logout-btn" onclick="location.href='/index.html'">
+        Logout
+      </button>
+    </header>
+    <div class="layout">
+      <nav class="side-menu">
+        <ul>
+          <li>
+            <a href="/modules/administracion/abmClientes.html">ABM Clientes</a>
+          </li>
+          <li>
+            <a href="/modules/administracion/abmSucursales.html"
+              >ABM Sucursales</a
+            >
+          </li>
+          <li>
+            <a href="/modules/administracion/abmUsuarios.html">ABM Usuarios</a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-content">
+        <h2>Bienvenido/a al Tablero De Administración</h2>
+        <p>Administrador/a ${nombre} ${apellido}</p>
+      </main>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2025 Pablo Alvarez. Todos los derechos reservados.</p>
+      <div class="footer-crazy"></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+/* Centrar el formulario en la pantalla */
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para el formulario de login */
+.login-form {
+  max-width: 400px;
+  width: 100%;
+  margin: 2.5% auto;
+  padding: 2rem 2rem 2.5rem 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.login-form h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  display: block;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 10px 0;
+  background: #ff512f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.login-form button[type="submit"]:hover {
+  background: #ff0000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

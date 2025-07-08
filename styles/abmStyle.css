@@ -1,0 +1,179 @@
+.main-box {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.filtros-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+/* Primera fila: DNI, Nombre, Apellido */
+.filtros-row {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.filtros-row label {
+  font-weight: 600;
+  margin-right: 0.3rem;
+}
+
+.filtros-row input {
+  width: 140px;
+}
+
+/* Segunda fila: Moneda y Cuenta */
+.filtros-row2 {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.filtros-row2 label {
+  font-weight: 600;
+  margin-right: 0.3rem;
+}
+
+.filtros-row2 select,
+.filtros-row2 input {
+  width: 140px;
+}
+
+/* Botón Buscar */
+.filtros-form button[type="submit"] {
+  margin-top: 0.5rem;
+  padding: 0.6rem 2.5rem;
+  background: #00aeff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filtros-form button[type="submit"]:hover {
+  background: #0000ff;
+}
+
+/* Botón Agregar alineado a la derecha */
+.tabla-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.7rem;
+}
+
+.agregar-btn {
+  padding: 0.5rem 1.5rem;
+  background: #0000ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.agregar-btn:hover {
+  background: #00aeff;
+}
+
+/* Tabla de clientes */
+.tabla-clientes table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 95%;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+.tabla-clientes th,
+.tabla-clientes td {
+  padding: 0.7rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tabla-clientes th {
+  background: #00c3ff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.tabla-clientes tr:last-child td {
+  border-bottom: none;
+}
+
+.tabla-clientes td a {
+  color: #007bb5;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.tabla-clientes td a:hover {
+  color: #007bb5;
+}
+
+/* Agrupa label + input/select en un solo marco */
+.filtro-group {
+  display: flex;
+  align-items: center;
+  background: #f7faff;
+  border: 1.5px solid #b3d8ff;
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
+  margin: 0 0.4rem 0.5rem 0.4rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.filtro-group:focus-within {
+  border-color: #00aeff;
+}
+
+/* Elimina el fondo y borde individual de label/input/select */
+.filtros-row label,
+.filtros-row input,
+.filtros-row2 label,
+.filtros-row2 select,
+.filtros-row2 input {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0.2rem 0 0;
+  box-shadow: none;
+}
+
+/* Mantiene el ancho de los inputs/selects */
+.filtros-row input,
+.filtros-row2 select,
+.filtros-row2 input {
+  width: 120px;
+}
+
+/* Opcional: mejora el espaciado entre grupos */
+.filtros-row,
+.filtros-row2 {
+  gap: 1rem;
+}

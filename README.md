@@ -22,14 +22,16 @@ abmClientes.html/abmSucursales/abmUsuarios.html -> mostrarían al igual que "tra
 
 Exceptuando "index.html" en tódas las demás páginas ".html" comparten tanto en el margen superior como en el margen inferior el header y el footer, el footer meramente informativo, el header con el título "<h1>" y el botón de "Logout" que redirigiría al "index.html" donde el usuario se debería volver a identificar.
 
+CONTEMPLACIONES DE ESTRUCTURAMIENTO:
+
+1_index.html - con estilos de Bootstrap.
+2_home.html/administracion.html/abmClientes.html/abmSucursales.html/abmUsuarios.html - con commonStyle.css y sus respectivos ".css" que corresponden a cada "tipo" de página.
+3_styles.\* - Se utiliza inicialmente un Style general para todas las páginas dentro de index.html como "commonStyle.css" donde se estandarizan los estilos de todos los componentes comunes (como headers y footers), linkeando en cada HTML los estilos comunes y el estilo que corresponde a cada página.
+4_responsive - index.html tiene el responsive aplicado propio de bootstrap, y cada página tiene su correspondiente "@mediaQuery" contemplando celulares (hasta 600px), tablets (hasta 1024px) y Desktop 1024px ++.
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////CONSIGNA///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-1_index.html - con estilos de BOOTSTRAP y RESPONSIVE (propio de bootstrap).
-2_home.html/administracion.html - con STYLE.CSS y RESPONSIVE personalizados con @mediaQuery.
-3_abmClientes.html/abmSucursales.html/abmUsuarios.html - con STYLE.CSS y RESPONSIVE personalizados con @mediaQuery.
-4_styles.\* - Se utiliza inicialmente un Style general para todas las páginas dentro de index.html como "commonStyle.css" donde se estandarizan los estilos de todos los componentes comunes, linkeando en cada HTML los estilos comunes y el estilo que corresponde a cada página.
 
 1*Éste proyecto cuenta con 6 HTML.
 2*Éste proyecto cuenta tambien con responsive en todos sus HTML.

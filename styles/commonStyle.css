@@ -112,6 +112,7 @@ body {
 
   .header h1 {
     font-size: 1.6rem;
+    text-align: left;
   }
 
   .logout-btn {
@@ -133,6 +134,7 @@ body {
 
   .header h1 {
     font-size: 1.1rem;
+    text-align: left;
   }
 
   .logout-btn {

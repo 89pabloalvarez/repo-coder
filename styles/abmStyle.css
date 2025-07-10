@@ -5,6 +5,15 @@
   border-radius: 30px;
   margin: 2rem;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #00aeff;
+  font-weight: bold;
 }
 
 .filtros-form {
@@ -72,11 +81,6 @@
 }
 
 /* Botón Agregar alineado a la derecha */
-.tabla-header {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 0.7rem;
-}
 
 .agregar-btn {
   padding: 0.5rem 1.5rem;
@@ -95,6 +99,25 @@
 }
 
 /* Tablas */
+.tabla-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.7rem;
+}
+
+.tabla-responsive {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.tabla-responsive table {
+  width: 100%;
+  min-width: 700px;
+  box-sizing: border-box;
+}
+
 .tabla table {
   margin: 0 auto;
   border-collapse: collapse;
@@ -279,5 +302,14 @@
 
   .side-menu a:hover {
     background: #007bb5;
+  }
+}
+
+@media (max-width: 900px) {
+  .tabla-responsive {
+    overflow-x: auto;
+  }
+  .tabla-responsive table {
+    min-width: 700px;
   }
 }

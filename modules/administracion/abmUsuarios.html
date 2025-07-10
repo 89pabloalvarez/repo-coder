@@ -3,19 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Tablero De Administración</title>
-    <link rel="stylesheet" href="/styles/commonStyle.css" />
-    <link rel="stylesheet" href="/styles/abmStyle.css" />
+    <title>ABM - Usuarios - Tablero De Administración</title>
+    <link rel="stylesheet" href="../../styles/commonStyle.css" />
+    <link rel="stylesheet" href="../../styles/abmStyle.css" />
   </head>
   <body>
     <header class="header">
-      <a href="/menuPages/home.html"><h1>Tablero De Administración</h1></a>
-      <button class="logout-btn" onclick="location.href='/index.html'">
+      <a href="../../menuPages/home.html"><h1>Tablero De Administración</h1></a>
+      <button class="logout-btn" onclick="location.href='../../index.html'">
         Logout
       </button>
     </header>
-    <main class="main-content login-form">
-      <h2>Proximamente...</h2>
+    <main class="main-box">
+      <h2 class="page-title">ABM - Usuarios</h2>
+      <section>
+        <form class="filtros-form">
+          <div class="filtros-row">
+            <div class="filtro-group">
+              <label for="nombre">Nombre del Usuario:</label>
+              <input type="text" id="userName" name="userName" />
+            </div>
+            <div class="filtro-group">
+              <label for="apellido">Apellido del Usuario:</label>
+              <input type="number" id="userLastName" name="userLastName" />
+            </div>
+            <div class="filtro-group">
+              <label for="identificacion">ID del Usuario:</label>
+              <input type="text" id="userId" name="userId" />
+            </div>
+          </div>
+          <div class="filtros-row2">
+            <div class="filtro-group">
+              <label for="state">Estado:</label>
+              <select id="state" name="state">
+                <option value="">Todas</option>
+                <option value="ACTIVE">Activo</option>
+                <option value="IDLE">Inactivo</option>
+              </select>
+            </div>
+            <div class="filtro-group">
+              <label for="branch">Sucursal:</label>
+              <select id="branch" name="branch">
+                <option value="">Todas</option>
+                <option value="KIOSCO PEPE">Kiosco Pepe</option>
+                <option value="FARMACIA RITA">Farmacia Rita</option>
+                <option value="FERRETERIA MARCOS">Ferretería Marcos</option>
+                <option value="KIOSCO LUIS">Kiosco Luis</option>
+                <option value="FARMACIA ROSA">Farmacia Rosa</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+
+      <section class="tabla">
+        <div class="tabla-header">
+          <button class="agregar-btn">Agregar</button>
+        </div>
+        <div class="tabla-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>ID</th>
+                <th>Sucursal</th>
+                <th>Estado</th>
+                <th>Editar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cosme</td>
+                <td>Fulanito</td>
+                <td>8465754834</td>
+                <td>Ferretería Marcos</td>
+                <td>Activo ✅</td>
+                <td>
+                  <a href="#"><span title="Editar">✏️</span></a>
+                </td>
+              </tr>
+              <tr>
+                <td>Arnold</td>
+                <td>Stallone</td>
+                <td>8475736487</td>
+                <td>Kiosco Pepe</td>
+                <td>Activo ✅</td>
+                <td>
+                  <a href="#"><span title="Editar">✏️</span></a>
+                </td>
+              </tr>
+              <tr>
+                <td>Sylvester</td>
+                <td>Schwarzenegger</td>
+                <td>4435294632</td>
+                <td>Farmacia Rita</td>
+                <td>Activo ✅</td>
+                <td>
+                  <a href="#"><span title="Editar">✏️</span></a>
+                </td>
+              </tr>
+              <tr>
+                <td>Clark</td>
+                <td>Parker</td>
+                <td>1975661372</td>
+                <td>Kiosco Pepe</td>
+                <td>Inactivo ❌</td>
+                <td>
+                  <a href="#"><span title="Editar">✏️</span></a>
+                </td>
+              </tr>
+              <tr>
+                <td>Peter</td>
+                <td>Kent</td>
+                <td>4435263847</td>
+                <td>Kiosco Luis</td>
+                <td>Inactivo ❌</td>
+                <td>
+                  <a href="#"><span title="Editar">✏️</span></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <p>&copy; 2025 Pablo Alvarez. Todos los derechos reservados.</p>

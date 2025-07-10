@@ -28,9 +28,10 @@ Exceptuando "index.html" en tódas las demás páginas ".html" comparten tanto e
 
 1_index.html - con estilos de BOOTSTRAP y RESPONSIVE (propio de bootstrap).
 2_home.html/administracion.html - con STYLE.CSS y RESPONSIVE personalizados con @mediaQuery.
-2_abmClientes.html/abmSucursales.html/abmUsuarios.html - con STYLE.CSS y RESPONSIVE personalizados con @mediaQuery.
+3_abmClientes.html/abmSucursales.html/abmUsuarios.html - con STYLE.CSS y RESPONSIVE personalizados con @mediaQuery.
+4_styles.\* - Se utiliza inicialmente un Style general para todas las páginas dentro de index.html como "commonStyle.css" donde se estandarizan los estilos de todos los componentes comunes, linkeando en cada HTML los estilos comunes y el estilo que corresponde a cada página.
 
 1*Éste proyecto cuenta con 6 HTML.
 2*Éste proyecto cuenta tambien con responsive en todos sus HTML.
-3_Se cumple tambien con la consigna de uso de bootstrap y flex.
-4_Por último, se entrega a través de un poryecto público subido a GitHub (https://github.com/89pabloalvarez/repo-coder.git) y una habilitación de GitHub-Pages (https://89pabloalvarez.github.io/repo-coder)
+3*Se cumple tambien con la consigna de uso de bootstrap y flex.
+4*Por último, se entrega a través de un poryecto público subido a GitHub (https://github.com/89pabloalvarez/repo-coder.git) y una habilitación de GitHub-Pages (https://89pabloalvarez.github.io/repo-coder)

@@ -74,25 +74,23 @@ body {
 .header h1 {
   margin: 0;
   font-size: 2rem;
-  width: 100%;
   text-align: center;
 }
 
 .logout-btn {
   position: absolute;
+  width: 44px;
+  height: 44px;
+  padding: 0;
   right: 2rem;
   top: 50%;
   transform: translateY(-50%);
-  padding: 0.5rem 1.2rem;
   background: #0000ff;
   color: #fff;
   border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: bold;
+  border-radius: 50%;
   cursor: pointer;
   transition: background 0.2s;
-  z-index: 10;
 }
 
 .logout-btn:hover {
@@ -116,8 +114,8 @@ body {
   }
 
   .logout-btn {
-    font-size: 1rem;
-    padding: 0.4rem 1.1rem;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.7rem;
   }
 
   .footer {

@@ -193,7 +193,7 @@
   gap: 1rem;
 }
 
-/* Tablet: hasta 1024px */
+/* Tablets: hasta 1024px */
 @media (max-width: 1024px) {
   .main-box {
     padding: 1.5rem 0.7rem;
@@ -231,7 +231,7 @@
   }
 }
 
-/* Celular: hasta 600px */
+/* Celulares: hasta 600px */
 @media (max-width: 600px) {
   .main-box {
     padding: 0.7rem 0.2rem;

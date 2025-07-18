@@ -24,7 +24,6 @@
   margin-bottom: 2rem;
 }
 
-/* Primera fila: DNI, Nombre, Apellido */
 .filtros-row {
   display: flex;
   gap: 1.5rem;
@@ -41,7 +40,6 @@
   width: 140px;
 }
 
-/* Segunda fila: Moneda y Cuenta */
 .filtros-row2 {
   display: flex;
   gap: 1.5rem;
@@ -59,7 +57,6 @@
   width: 140px;
 }
 
-/* Botón Buscar */
 .filtros-form button[type="submit"] {
   margin-top: 0.5rem;
   padding: 0.6rem 2.5rem;
@@ -80,16 +77,18 @@
   background: #0000ff;
 }
 
-/* Botón Agregar alineado a la derecha */
-
 .agregar-btn {
-  padding: 0.5rem 1.5rem;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin-right: 5%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #0000ff;
   color: #fff;
   border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: bold;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -98,7 +97,6 @@
   background: #00aeff;
 }
 
-/* Tablas */
 .tabla-header {
   display: flex;
   justify-content: flex-end;
@@ -156,7 +154,6 @@
   color: #007bb5;
 }
 
-/* Agrupa label + input/select en un solo marco */
 .filtro-group {
   display: flex;
   align-items: center;
@@ -173,7 +170,6 @@
   border-color: #00aeff;
 }
 
-/* Elimina el fondo y borde individual de label/input/select */
 .filtros-row label,
 .filtros-row input,
 .filtros-row2 label,
@@ -186,20 +182,18 @@
   box-shadow: none;
 }
 
-/* Mantiene el ancho de los inputs/selects */
 .filtros-row input,
 .filtros-row2 select,
 .filtros-row2 input {
   width: 120px;
 }
 
-/* Opcional: mejora el espaciado entre grupos */
 .filtros-row,
 .filtros-row2 {
   gap: 1rem;
 }
 
-/* Tablet: hasta 1024px */
+/* Tablets: hasta 1024px */
 @media (max-width: 1024px) {
   .main-box {
     padding: 1.5rem 0.7rem;
@@ -222,22 +216,9 @@
   .tabla table {
     font-size: 0.97rem;
   }
-
-  .side-menu {
-    width: 180px !important;
-    font-size: 1.05rem;
-  }
-
-  .side-menu ul {
-    padding: 0.7rem 0.5rem;
-  }
-
-  .side-menu li {
-    margin-bottom: 0.7rem;
-  }
 }
 
-/* Celular: hasta 600px */
+/* Celulares: hasta 600px */
 @media (max-width: 600px) {
   .main-box {
     padding: 0.7rem 0.2rem;
@@ -264,47 +245,9 @@
     font-size: 0.89rem;
     padding: 0.4rem 0.3rem;
   }
-
-  .side-menu {
-    width: 100vw !important;
-    font-size: 1.15rem;
-    background: #e3f4ff;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-    margin-bottom: 1rem;
-  }
-
-  .side-menu ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0.5rem 0;
-    margin: 0;
-  }
-
-  .side-menu li {
-    margin: 0 0.5rem;
-    list-style: none;
-  }
-
-  .side-menu a {
-    display: block;
-    padding: 0.5rem 0.7rem;
-    border-radius: 6px;
-    background: #00aeff;
-    color: #fff !important;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: background 0.2s;
-  }
-
-  .side-menu a:hover {
-    background: #007bb5;
-  }
 }
 
+/* Desbordamiento de la tabla */
 @media (max-width: 900px) {
   .tabla-responsive {
     overflow-x: auto;

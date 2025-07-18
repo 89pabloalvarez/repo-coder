@@ -1,8 +1,8 @@
 @use "variables" as *;
 
 .footer {
-  background: linear-gradient(90deg, #00aeff 0%, #0000ff 100%);
-  color: #fff;
+  background: $color-footer-bg;
+  color: $color-white;
   text-align: center;
   padding: 3rem 1rem;
   font-size: 1.5rem;

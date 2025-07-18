@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(135deg, #f5f7fa 0%, #676767 100%);
+  background: $color-main-bg;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,10 +29,10 @@ body {
 .main-box {
   flex: 1;
   padding: 3rem 2rem;
-  background: rgba(255, 255, 255, 0.8);
+  background: $shadow-color-light;
   border-radius: 30px;
   margin: 2rem;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 24px $shadow-color-dark;
   overflow: hidden;
 }
 
@@ -40,7 +40,7 @@ body {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 2rem;
-  color: #00aeff;
+  color: $color-blue-light;
   font-weight: bold;
 }
 
@@ -85,11 +85,11 @@ body {
   width: 140px;
 }
 
-.filtros-form button[type="submit"] {
+.filtros-form button {
   margin-top: 0.5rem;
   padding: 0.6rem 2.5rem;
-  background: #00aeff;
-  color: #fff;
+  background: $color-blue-light;
+  color: $color-white;
   border: none;
   border-radius: 6px;
   font-size: 1.1rem;
@@ -101,8 +101,8 @@ body {
   margin-right: auto;
 }
 
-.filtros-form button[type="submit"]:hover {
-  background: #0000ff;
+.filtros-form button:hover {
+  background: $color-blue-dark;
 }
 
 .agregar-btn {
@@ -114,15 +114,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0000ff;
-  color: #fff;
+  background: $color-blue-dark;
+  color: $color-white;
   border: none;
   cursor: pointer;
   transition: background 0.2s;
 }
 
 .agregar-btn:hover {
-  background: #00aeff;
+  background: $color-blue-light;
 }
 
 .tabla-header {
@@ -148,22 +148,22 @@ body {
   margin: 0 auto;
   border-collapse: collapse;
   width: 95%;
-  background: #fff;
+  background: $color-white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 12px $shadow-color-dark;
 }
 
 .tabla th,
 .tabla td {
   padding: 0.7rem 1rem;
   text-align: center;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid $color-gray;
 }
 
 .tabla th {
-  background: #00c3ff;
-  color: #fff;
+  background: $color-blue-light;
+  color: $color-white;
   font-weight: bold;
   font-size: 1.05rem;
 }
@@ -173,20 +173,20 @@ body {
 }
 
 .tabla td a {
-  color: #007bb5;
+  color: $color-blue-light;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
 .tabla td a:hover {
-  color: #007bb5;
+  color: $color-blue-dark;
 }
 
 .filtro-group {
   display: flex;
   align-items: center;
-  background: #f7faff;
-  border: 1.5px solid #b3d8ff;
+  background: $color-white;
+  border: 1.5px solid $color-blue-light;
   border-radius: 8px;
   padding: 0.4rem 0.7rem;
   margin: 0 0.4rem 0.5rem 0.4rem;
@@ -195,7 +195,7 @@ body {
 }
 
 .filtro-group:focus-within {
-  border-color: #00aeff;
+  border-color: $color-blue-light;
 }
 
 .filtros-row label,

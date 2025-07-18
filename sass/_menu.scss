@@ -16,38 +16,25 @@
   box-shadow: 4px 0 20px $shadow-color-dark;
   position: relative;
   z-index: 1;
-}
-
-.side-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.side-menu li {
-  margin: 2rem 0;
-}
-
-.side-menu a {
-  color: $color-white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.2s, letter-spacing 0.2s;
-  letter-spacing: 1px;
-}
-
-.side-menu a:hover {
-  color: $color-blue-light;
-  letter-spacing: 2px;
-}
-
-.main-content {
-  flex: 1;
-  padding: 3rem 2rem;
-  background: $shadow-color-light;
-  border-radius: 30px;
-  margin: 2rem;
-  box-shadow: 0 4px 24px $shadow-color-dark;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin: 2rem 0;
+  }
+  a {
+    color: $color-white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s, letter-spacing 0.2s;
+    letter-spacing: 1px;
+  }
+  a:hover {
+    color: $color-blue-light;
+    letter-spacing: 2px;
+  }
 }
 
 /* Tablets: hasta 1024px */

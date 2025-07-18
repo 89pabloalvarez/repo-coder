@@ -8,7 +8,6 @@ header {
   align-items: center;
   position: relative;
 }
-
 header a {
   color: inherit;
   text-decoration: none;
@@ -17,11 +16,14 @@ header a {
   display: flex;
   justify-content: center;
 }
-
 header h1 {
   margin: 0;
   font-size: 2rem;
   text-align: center;
+}
+header h1:hover {
+  letter-spacing: 4px;
+  color: #222;
 }
 
 .logout-btn {
@@ -42,11 +44,6 @@ header h1 {
 
 .logout-btn:hover {
   background: red;
-}
-
-header h1:hover {
-  letter-spacing: 4px;
-  color: #222;
 }
 
 /* Tablets: hasta 1024px */
@@ -98,17 +95,14 @@ header h1:hover {
   position: relative;
   z-index: 1;
 }
-
 .side-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .side-menu li {
   margin: 2rem 0;
 }
-
 .side-menu a {
   color: #fff;
   text-decoration: none;
@@ -116,19 +110,9 @@ header h1:hover {
   transition: color 0.2s, letter-spacing 0.2s;
   letter-spacing: 1px;
 }
-
 .side-menu a:hover {
   color: #00aeff;
   letter-spacing: 2px;
-}
-
-.main-content {
-  flex: 1;
-  padding: 3rem 2rem;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 30px;
-  margin: 2rem;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
 /* Tablets: hasta 1024px */
@@ -255,35 +239,58 @@ body {
 
 .filtros-row {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
   width: 100%;
 }
-
 .filtros-row label {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0.2rem 0 0;
+  box-shadow: none;
   font-weight: 600;
   margin-right: 0.3rem;
 }
-
 .filtros-row input {
-  width: 140px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0.2rem 0 0;
+  box-shadow: none;
+  width: 120px;
 }
 
 .filtros-row2 {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
   width: 100%;
 }
-
 .filtros-row2 label {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0.2rem 0 0;
+  box-shadow: none;
   font-weight: 600;
   margin-right: 0.3rem;
 }
-
-.filtros-row2 select,
+.filtros-row2 select {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0.2rem 0 0;
+  box-shadow: none;
+  width: 120px;
+}
 .filtros-row2 input {
-  width: 140px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0.2rem 0 0;
+  box-shadow: none;
+  width: 120px;
 }
 
 .filtros-form button {
@@ -301,9 +308,24 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 .filtros-form button:hover {
   background: #0000ff;
+}
+
+.filtro-group {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1.5px solid #00aeff;
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
+  margin: 0 0.4rem 0.5rem 0.4rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.filtro-group:focus-within {
+  border-color: #00aeff;
 }
 
 .agregar-btn {
@@ -338,7 +360,6 @@ body {
   overflow-x: auto;
   box-sizing: border-box;
 }
-
 .tabla-responsive table {
   width: 100%;
   min-width: 700px;
@@ -354,72 +375,39 @@ body {
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
-
-.tabla th,
-.tabla td {
-  padding: 0.7rem 1rem;
-  text-align: center;
-  border-bottom: 1px solid #676767;
-}
-
 .tabla th {
   background: #00aeff;
   color: #fff;
   font-weight: bold;
   font-size: 1.05rem;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #676767;
 }
-
+.tabla td {
+  padding: 0.7rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #676767;
+}
 .tabla tr:last-child td {
   border-bottom: none;
 }
-
 .tabla td a {
   color: #00aeff;
   text-decoration: none;
   font-size: 1.2rem;
 }
-
 .tabla td a:hover {
   color: #0000ff;
 }
 
-.filtro-group {
-  display: flex;
-  align-items: center;
-  background: #fff;
-  border: 1.5px solid #00aeff;
-  border-radius: 8px;
-  padding: 0.4rem 0.7rem;
-  margin: 0 0.4rem 0.5rem 0.4rem;
-  box-sizing: border-box;
-  transition: border-color 0.2s;
-}
-
-.filtro-group:focus-within {
-  border-color: #00aeff;
-}
-
-.filtros-row label,
-.filtros-row input,
-.filtros-row2 label,
-.filtros-row2 select,
-.filtros-row2 input {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0 0.2rem 0 0;
-  box-shadow: none;
-}
-
-.filtros-row input,
-.filtros-row2 select,
-.filtros-row2 input {
-  width: 120px;
-}
-
-.filtros-row,
-.filtros-row2 {
-  gap: 1rem;
+.main-content {
+  flex: 1;
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  margin: 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
 /* Tablets: hasta 1024px */
@@ -461,8 +449,14 @@ body {
     max-width: 100%;
     font-size: 1rem;
   }
-  .tabla table,
-  .tabla th,
+  .tabla table {
+    font-size: 0.89rem;
+    padding: 0.4rem 0.3rem;
+  }
+  .tabla th {
+    font-size: 0.89rem;
+    padding: 0.4rem 0.3rem;
+  }
   .tabla td {
     font-size: 0.89rem;
     padding: 0.4rem 0.3rem;

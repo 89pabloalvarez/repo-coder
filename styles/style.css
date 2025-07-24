@@ -41,7 +41,6 @@ header h1:hover {
   cursor: pointer;
   transition: background 0.2s;
 }
-
 .logout-btn:hover {
   background: red;
 }
@@ -236,6 +235,24 @@ body {
   gap: 0.7rem;
   margin-bottom: 2rem;
 }
+.filtros-form button {
+  margin-top: 0.5rem;
+  padding: 0.6rem 2.5rem;
+  background: #00aeff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.filtros-form button:hover {
+  background: #0000ff;
+}
 
 .filtros-row {
   display: flex;
@@ -293,25 +310,6 @@ body {
   width: 120px;
 }
 
-.filtros-form button {
-  margin-top: 0.5rem;
-  padding: 0.6rem 2.5rem;
-  background: #00aeff;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.filtros-form button:hover {
-  background: #0000ff;
-}
-
 .filtro-group {
   display: flex;
   align-items: center;
@@ -323,7 +321,6 @@ body {
   box-sizing: border-box;
   transition: border-color 0.2s;
 }
-
 .filtro-group:focus-within {
   border-color: #00aeff;
 }
@@ -343,7 +340,6 @@ body {
   cursor: pointer;
   transition: background 0.2s;
 }
-
 .agregar-btn:hover {
   background: #00aeff;
 }
@@ -389,9 +385,6 @@ body {
   text-align: center;
   border-bottom: 1px solid #676767;
 }
-.tabla tr:last-child td {
-  border-bottom: none;
-}
 .tabla td a {
   color: #00aeff;
   text-decoration: none;
@@ -399,6 +392,9 @@ body {
 }
 .tabla td a:hover {
   color: #0000ff;
+}
+.tabla tr:last-child td {
+  border-bottom: none;
 }
 
 .main-content {

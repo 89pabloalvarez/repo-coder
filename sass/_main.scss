@@ -50,6 +50,24 @@ body {
   align-items: center;
   gap: 0.7rem;
   margin-bottom: 2rem;
+  button {
+    margin-top: 0.5rem;
+    padding: 0.6rem 2.5rem;
+    background: $color-blue-light;
+    color: $color-white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button:hover {
+    background: $color-blue-dark;
+  }
 }
 
 .filtros-row {
@@ -108,27 +126,6 @@ body {
   }
 }
 
-.filtros-form {
-  button {
-    margin-top: 0.5rem;
-    padding: 0.6rem 2.5rem;
-    background: $color-blue-light;
-    color: $color-white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.2s;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  button:hover {
-    background: $color-blue-dark;
-  }
-}
-
 .filtro-group {
   display: flex;
   align-items: center;
@@ -139,10 +136,9 @@ body {
   margin: 0 0.4rem 0.5rem 0.4rem;
   box-sizing: border-box;
   transition: border-color 0.2s;
-}
-
-.filtro-group:focus-within {
-  border-color: $color-blue-light;
+  &:focus-within {
+    border-color: $color-blue-light;
+  }
 }
 
 .agregar-btn {
@@ -159,10 +155,9 @@ body {
   border: none;
   cursor: pointer;
   transition: background 0.2s;
-}
-
-.agregar-btn:hover {
-  background: $color-blue-light;
+  &:hover {
+    background: $color-blue-light;
+  }
 }
 
 .tabla-header {
@@ -206,19 +201,17 @@ body {
     padding: 0.7rem 1rem;
     text-align: center;
     border-bottom: 1px solid $color-gray;
-  }
-  tr:last-child td {
-    border-bottom: none;
-  }
-  td {
     a {
       color: $color-blue-light;
       text-decoration: none;
       font-size: 1.2rem;
+      &:hover {
+        color: $color-blue-dark;
+      }
     }
-    a:hover {
-      color: $color-blue-dark;
-    }
+  }
+  tr:last-child td {
+    border-bottom: none;
   }
 }
 

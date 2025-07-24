@@ -21,10 +21,10 @@ header {
     margin: 0;
     font-size: 2rem;
     text-align: center;
-  }
-  h1:hover {
-    letter-spacing: 4px;
-    color: $color-black;
+    &:hover {
+      letter-spacing: 4px;
+      color: $color-black;
+    }
   }
 }
 
@@ -42,10 +42,9 @@ header {
   border-radius: 50%;
   cursor: pointer;
   transition: background 0.2s;
-}
-
-.logout-btn:hover {
-  background: $color-red;
+  &:hover {
+    background: $color-red;
+  }
 }
 
 /* Tablets: hasta 1024px */

@@ -30,10 +30,10 @@
     font-weight: bold;
     transition: color 0.2s, letter-spacing 0.2s;
     letter-spacing: 1px;
-  }
-  a:hover {
-    color: $color-blue-light;
-    letter-spacing: 2px;
+    &:hover {
+      color: $color-blue-light;
+      letter-spacing: 2px;
+    }
   }
 }
 
@@ -42,19 +42,16 @@
   .side-menu {
     width: 250px;
     padding: 1.2rem 0.5rem;
-  }
-
-  .side-menu a {
-    font-size: 1rem;
-    letter-spacing: 0;
-  }
-
-  .side-menu a:hover {
-    letter-spacing: normal;
-  }
-
-  .side-menu li {
-    margin: 1rem 0;
+    a {
+      font-size: 1rem;
+      letter-spacing: 0;
+      &:hover {
+        letter-spacing: normal;
+      }
+    }
+    li {
+      margin: 1rem 0;
+    }
   }
 }
 
@@ -70,46 +67,41 @@
     padding: 0.4rem 0.2rem;
     border-radius: 0 0 12px 12px;
     box-shadow: 0 2px 8px $shadow-color-dark;
-  }
-
-  .side-menu ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-    align-items: flex-start;
-  }
-
-  .side-menu li {
-    margin: 0 0.5rem;
-    display: flex;
-    align-items: center;
-  }
-
-  .side-menu a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 0.93rem;
-    letter-spacing: 0;
-    padding: 0.5rem 0.7rem;
-    border-radius: 6px;
-    background: $color-black;
-    color: $color-white;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.2s;
-  }
-
-  .side-menu a svg {
-    margin-bottom: 0.3em;
-    display: block;
-  }
-
-  .side-menu a:hover {
-    letter-spacing: normal;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0;
+      margin: 0;
+      align-items: flex-start;
+    }
+    li {
+      margin: 0 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.93rem;
+      letter-spacing: 0;
+      padding: 0.5rem 0.7rem;
+      border-radius: 6px;
+      background: $color-black;
+      color: $color-white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+      svg {
+        margin-bottom: 0.3em;
+        display: block;
+      }
+      &:hover {
+        letter-spacing: normal;
+      }
+    }
   }
 
   .main-content {

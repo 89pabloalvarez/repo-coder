@@ -1,0 +1,19 @@
+$color-blue-light: #00aeff;
+$color-blue-dark: #0000ff;
+$color-white: #fff;
+$color-black: #222;
+$color-gray: #676767;
+$color-red: red;
+$color-header-bg: linear-gradient(
+  90deg,
+  $color-blue-dark 50%,
+  $color-blue-light 100%
+);
+$color-footer-bg: linear-gradient(
+  90deg,
+  $color-blue-light 50%,
+  $color-blue-dark 100%
+);
+$color-main-bg: linear-gradient(135deg, $color-white 0%, $color-gray 100%);
+$shadow-color-dark: rgba(0, 0, 0, 0.4);
+$shadow-color-light: rgba(255, 255, 255, 0.8);

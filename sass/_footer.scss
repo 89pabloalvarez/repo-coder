@@ -1,0 +1,28 @@
+@use "variables" as *;
+
+.footer {
+  background: $color-footer-bg;
+  color: $color-white;
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Tablets: hasta 1024px */
+@media (max-width: 1024px) {
+  .footer {
+    font-size: 1.25rem;
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Celulares: hasta 600px */
+@media (max-width: 600px) {
+  .footer {
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+  }
+}

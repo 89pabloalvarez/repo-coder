@@ -1,0 +1,84 @@
+@use "variables" as *;
+
+header {
+  background: $color-header-bg;
+  color: $color-white;
+  padding: 2rem 1rem;
+  letter-spacing: 2px;
+  box-shadow: $shadow-color-dark;
+  display: flex;
+  align-items: center;
+  position: relative;
+  a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+    &:hover {
+      letter-spacing: 4px;
+      color: $color-black;
+    }
+  }
+}
+
+.logout-btn {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: $color-blue-dark;
+  color: $color-white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+  &:hover {
+    background: $color-red;
+  }
+}
+
+/* Tablets: hasta 1024px */
+@media (max-width: 1024px) {
+  header {
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: left;
+    h1 {
+      font-size: 1.6rem;
+      text-align: left;
+    }
+  }
+
+  .logout-btn {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.7rem;
+  }
+}
+
+/* Celulares: hasta 600px */
+@media (max-width: 600px) {
+  header {
+    padding: 1rem 0.5rem;
+    a {
+      justify-content: left;
+    }
+    h1 {
+      font-size: 1.1rem;
+    }
+  }
+
+  .logout-btn {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.7rem;
+  }
+}

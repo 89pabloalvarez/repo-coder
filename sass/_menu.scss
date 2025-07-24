@@ -1,0 +1,112 @@
+@use "variables" as *;
+
+.layout {
+  display: flex;
+  flex: 1;
+  min-height: 60vh;
+}
+
+.side-menu {
+  width: 300px;
+  background: $color-black;
+  color: $color-white;
+  padding: 2rem 1rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 4px 0 20px $shadow-color-dark;
+  position: relative;
+  z-index: 1;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin: 2rem 0;
+  }
+  a {
+    color: $color-white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s, letter-spacing 0.2s;
+    letter-spacing: 1px;
+    &:hover {
+      color: $color-blue-light;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+/* Tablets: hasta 1024px */
+@media (max-width: 1024px) {
+  .side-menu {
+    width: 250px;
+    padding: 1.2rem 0.5rem;
+    a {
+      font-size: 1rem;
+      letter-spacing: 0;
+      &:hover {
+        letter-spacing: normal;
+      }
+    }
+    li {
+      margin: 1rem 0;
+    }
+  }
+}
+
+/* Celulares: hasta 600px */
+@media (max-width: 600px) {
+  .layout {
+    flex-direction: column;
+    min-height: unset;
+  }
+
+  .side-menu {
+    width: 100vw;
+    padding: 0.4rem 0.2rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 8px $shadow-color-dark;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0;
+      margin: 0;
+      align-items: flex-start;
+    }
+    li {
+      margin: 0 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.93rem;
+      letter-spacing: 0;
+      padding: 0.5rem 0.7rem;
+      border-radius: 6px;
+      background: $color-black;
+      color: $color-white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+      svg {
+        margin-bottom: 0.3em;
+        display: block;
+      }
+      &:hover {
+        letter-spacing: normal;
+      }
+    }
+  }
+
+  .main-content {
+    margin: 1rem 0.5rem;
+    padding: 1.2rem 0.7rem;
+    border-radius: 16px;
+  }
+}

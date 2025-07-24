@@ -38,7 +38,7 @@ body {
 
 .page-title {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: $font-size-two;
   margin-bottom: 2rem;
   color: $color-blue-light;
   font-weight: bold;
@@ -57,7 +57,7 @@ body {
     color: $color-white;
     border: none;
     border-radius: 6px;
-    font-size: 1.1rem;
+    font-size: $font-size-one;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.2s;
@@ -192,7 +192,7 @@ body {
     background: $color-blue-light;
     color: $color-white;
     font-weight: bold;
-    font-size: 1.05rem;
+    font-size: $font-size-one;
     padding: 0.7rem 1rem;
     text-align: center;
     border-bottom: 1px solid $color-gray;
@@ -204,7 +204,7 @@ body {
     a {
       color: $color-blue-light;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: $font-size-one-quarter;
       &:hover {
         color: $color-blue-dark;
       }
@@ -248,7 +248,7 @@ body {
 
   .tabla {
     table {
-      font-size: 0.97rem;
+      font-size: $font-size-one;
     }
   }
 }
@@ -272,21 +272,21 @@ body {
       width: 100% !important;
       min-width: 0;
       max-width: 100%;
-      font-size: 1rem;
+      font-size: $font-size-one;
     }
   }
 
   .tabla {
     table {
-      font-size: 0.89rem;
+      font-size: $font-size-one;
       padding: 0.4rem 0.3rem;
     }
     th {
-      font-size: 0.89rem;
+      font-size: $font-size-one;
       padding: 0.4rem 0.3rem;
     }
     td {
-      font-size: 0.89rem;
+      font-size: $font-size-one;
       padding: 0.4rem 0.3rem;
     }
   }

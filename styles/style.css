@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/*Colores*/
+/*Fondos*/
+/*Sombras*/
+/*Tamaño de fuentes*/
 header {
   background: linear-gradient(90deg, #0000ff 50%, #00aeff 100%);
   color: #fff;
@@ -53,11 +58,11 @@ header h1:hover {
     align-items: left;
   }
   header h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: left;
   }
   .logout-btn {
-    font-size: 0.85rem;
+    font-size: 1rem;
     padding: 0.3rem 0.7rem;
   }
 }
@@ -70,11 +75,11 @@ header h1:hover {
     justify-content: left;
   }
   header h1 {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
   .logout-btn {
-    font-size: 0.85rem;
-    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }
 .layout {
@@ -160,7 +165,7 @@ header h1:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.93rem;
+    font-size: 1rem;
     letter-spacing: 0;
     padding: 0.5rem 0.7rem;
     border-radius: 6px;
@@ -222,7 +227,7 @@ body {
 
 .page-title {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
   color: #00aeff;
   font-weight: bold;
@@ -242,7 +247,7 @@ body {
   color: #fff;
   border: none;
   border-radius: 6px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.2s;
@@ -375,7 +380,7 @@ body {
   background: #00aeff;
   color: #fff;
   font-weight: bold;
-  font-size: 1.05rem;
+  font-size: 1rem;
   padding: 0.7rem 1rem;
   text-align: center;
   border-bottom: 1px solid #676767;
@@ -388,7 +393,7 @@ body {
 .tabla td a {
   color: #00aeff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 .tabla td a:hover {
   color: #0000ff;
@@ -424,7 +429,7 @@ body {
     max-width: 100%;
   }
   .tabla table {
-    font-size: 0.97rem;
+    font-size: 1rem;
   }
 }
 /* Celulares: hasta 600px */
@@ -446,15 +451,15 @@ body {
     font-size: 1rem;
   }
   .tabla table {
-    font-size: 0.89rem;
+    font-size: 1rem;
     padding: 0.4rem 0.3rem;
   }
   .tabla th {
-    font-size: 0.89rem;
+    font-size: 1rem;
     padding: 0.4rem 0.3rem;
   }
   .tabla td {
-    font-size: 0.89rem;
+    font-size: 1rem;
     padding: 0.4rem 0.3rem;
   }
 }

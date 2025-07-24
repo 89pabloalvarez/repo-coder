@@ -1,9 +1,11 @@
+/*Colores*/
 $color-blue-light: #00aeff;
 $color-blue-dark: #0000ff;
 $color-white: #fff;
 $color-black: #222;
 $color-gray: #676767;
 $color-red: red;
+/*Fondos*/
 $color-header-bg: linear-gradient(
   90deg,
   $color-blue-dark 50%,
@@ -15,5 +17,11 @@ $color-footer-bg: linear-gradient(
   $color-blue-dark 100%
 );
 $color-main-bg: linear-gradient(135deg, $color-white 0%, $color-gray 100%);
+/*Sombras*/
 $shadow-color-dark: rgba(0, 0, 0, 0.4);
 $shadow-color-light: rgba(255, 255, 255, 0.8);
+/*Tamaño de fuentes*/
+$font-size-one: 1rem;
+$font-size-one-quarter: 1.25rem;
+$font-size-one-half: 1.5rem;
+$font-size-two: 2rem;

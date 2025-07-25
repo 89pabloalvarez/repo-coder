@@ -22,8 +22,7 @@ header {
     font-size: $font-size-two;
     text-align: center;
     &:hover {
-      letter-spacing: 4px;
-      color: $color-black;
+      animation: h1-highlight 0.5s;
     }
   }
 }
@@ -43,7 +42,7 @@ header {
   cursor: pointer;
   transition: background 0.2s;
   &:hover {
-    background: $color-red;
+    animation: logout-btn-animation 0.5s;
   }
 }
 
@@ -80,5 +79,28 @@ header {
   .logout-btn {
     font-size: $font-size-one;
     padding: 0.5rem;
+  }
+}
+
+@keyframes logout-btn-animation {
+  0% {
+    color: $color-red;
+  }
+  100% {
+    background-color: $color-red;
+  }
+}
+
+@keyframes h1-highlight {
+  0% {
+    color: $color-white;
+    letter-spacing: 1px;
+  }
+  50% {
+    color: $color-blue-dark;
+    letter-spacing: 3px;
+  }
+  100% {
+    color: $color-black;
   }
 }

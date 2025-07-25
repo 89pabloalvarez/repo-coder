@@ -27,8 +27,7 @@ header h1 {
   text-align: center;
 }
 header h1:hover {
-  letter-spacing: 4px;
-  color: #222;
+  animation: h1-highlight 0.5s;
 }
 
 .logout-btn {
@@ -47,7 +46,7 @@ header h1:hover {
   transition: background 0.2s;
 }
 .logout-btn:hover {
-  background: red;
+  animation: logout-btn-animation 0.5s;
 }
 
 /* Tablets: hasta 1024px */
@@ -80,6 +79,27 @@ header h1:hover {
   .logout-btn {
     font-size: 1rem;
     padding: 0.5rem;
+  }
+}
+@keyframes logout-btn-animation {
+  0% {
+    color: red;
+  }
+  100% {
+    background-color: red;
+  }
+}
+@keyframes h1-highlight {
+  0% {
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  50% {
+    color: #0000ff;
+    letter-spacing: 3px;
+  }
+  100% {
+    color: #222;
   }
 }
 .layout {

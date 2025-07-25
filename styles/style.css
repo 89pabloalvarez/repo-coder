@@ -115,8 +115,7 @@ header h1:hover {
   letter-spacing: 1px;
 }
 .side-menu a:hover {
-  color: #00aeff;
-  letter-spacing: 2px;
+  animation: menu-highlight 2s;
 }
 
 /* Tablets: hasta 1024px */
@@ -187,6 +186,19 @@ header h1:hover {
     margin: 1rem 0.5rem;
     padding: 1.2rem 0.7rem;
     border-radius: 16px;
+  }
+}
+@keyframes menu-highlight {
+  0% {
+    color: #0000ff;
+    letter-spacing: 1px;
+  }
+  50% {
+    color: #00aeff;
+    letter-spacing: 2px;
+  }
+  100% {
+    color: #0000ff;
   }
 }
 * {

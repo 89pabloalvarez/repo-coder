@@ -31,8 +31,7 @@
     transition: color 0.2s, letter-spacing 0.2s;
     letter-spacing: 1px;
     &:hover {
-      color: $color-blue-light;
-      letter-spacing: 2px;
+      animation: menu-highlight 2s;
     }
   }
 }
@@ -108,5 +107,19 @@
     margin: 1rem 0.5rem;
     padding: 1.2rem 0.7rem;
     border-radius: 16px;
+  }
+}
+
+@keyframes menu-highlight {
+  0% {
+    color: $color-blue-dark;
+    letter-spacing: 1px;
+  }
+  50% {
+    color: $color-blue-light;
+    letter-spacing: 2px;
+  }
+  100% {
+    color: $color-blue-dark;
   }
 }

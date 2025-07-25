@@ -378,7 +378,7 @@ body {
   transition: background 0.2s;
 }
 .agregar-btn:hover {
-  background: #00aeff;
+  animation: add-btn-animation 0.5s;
 }
 
 .tabla-header {
@@ -502,6 +502,19 @@ body {
   }
   .tabla-responsive table {
     min-width: 700px;
+  }
+}
+@keyframes add-btn-animation {
+  0% {
+    color: #222;
+  }
+  50% {
+    color: #fff;
+    background-color: #00aeff;
+  }
+  100% {
+    color: #222;
+    background-color: #0000ff;
   }
 }
 .footer {

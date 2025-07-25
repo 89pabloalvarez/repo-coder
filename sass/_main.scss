@@ -156,7 +156,7 @@ body {
   cursor: pointer;
   transition: background 0.2s;
   &:hover {
-    background: $color-blue-light;
+    animation: add-btn-animation 0.5s;
   }
 }
 
@@ -299,5 +299,19 @@ body {
     table {
       min-width: 700px;
     }
+  }
+}
+
+@keyframes add-btn-animation {
+  0% {
+    color: $color-black;
+  }
+  50% {
+    color: $color-white;
+    background-color: $color-blue-light;
+  }
+  100% {
+    color: $color-black;
+    background-color: $color-blue-dark;
   }
 }

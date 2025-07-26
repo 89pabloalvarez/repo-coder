@@ -18,12 +18,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: $color-main-bg;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+  animation: bg-main-animation 10s infinite alternate;
+  transition: background-color 2s linear;
 }
 
 .main-box {
@@ -156,7 +157,7 @@ body {
   cursor: pointer;
   transition: background 0.2s;
   &:hover {
-    animation: add-btn-animation 0.5s;
+    animation: add-btn-animation 0.5s forwards;
   }
 }
 
@@ -195,12 +196,12 @@ body {
     font-size: $font-size-one;
     padding: 0.7rem 1rem;
     text-align: center;
-    border-bottom: 1px solid $color-gray;
+    border-bottom: 1px solid $color-gray-dark;
   }
   td {
     padding: 0.7rem 1rem;
     text-align: center;
-    border-bottom: 1px solid $color-gray;
+    border-bottom: 1px solid $color-gray-dark;
     a {
       color: $color-blue-light;
       text-decoration: none;
@@ -307,11 +308,20 @@ body {
     color: $color-black;
   }
   50% {
-    color: $color-white;
+    color: $color-blue-dark;
     background-color: $color-blue-light;
   }
   100% {
-    color: $color-black;
+    color: $color-blue-light;
     background-color: $color-blue-dark;
+  }
+}
+
+@keyframes bg-main-animation {
+  0% {
+    background-color: $color-gray-light;
+  }
+  100% {
+    background-color: $color-gray-dark;
   }
 }

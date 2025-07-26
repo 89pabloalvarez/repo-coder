@@ -22,7 +22,7 @@ header {
     font-size: $font-size-two;
     text-align: center;
     &:hover {
-      animation: h1-highlight 0.5s;
+      animation: h1-highlight 0.5s forwards;
     }
   }
 }
@@ -42,7 +42,7 @@ header {
   cursor: pointer;
   transition: background 0.2s;
   &:hover {
-    animation: logout-btn-animation 0.5s;
+    animation: logout-btn-animation 0.5s forwards;
   }
 }
 

@@ -34,17 +34,6 @@ La página es un backoffice administrativo para la estructura de gestión de una
 
 - Se utilizo el servicio gratuito de hosting 'Vercel' como alternativa a 'GitHub Page' para subir la página debido a su facil conexión con el propio github y su perfecta integración a la hora de hacer despliegues.
 
-## Color Reference
-
-| Color      | Hex                                                              |
-| ---------- | ---------------------------------------------------------------- |
-| White      | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #fff    |
-| Black      | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #222    |
-| Grey Dark  | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #676767 |
-| Grey Ligth | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #b4b4b4 |
-| Blue Dark  | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #0000ff |
-| Blue Light | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00aeff |
-
 ## Author
 
 - [@paulrammone](https://www.linkedin.com/in/pablo-alvarez-bernardez/)
